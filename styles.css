@@ -1,0 +1,203 @@
+/*------ Root variables ---------*/
+:root{
+    font-family: 'Roboto', sans-serif;
+    --black:#000;
+    --silversand: #C4C4C4;
+    --main-font-size:20px;
+    --smaller-font-size: 16px;
+    --regular-weight:400;
+    --medium-weight:500;
+}
+
+*{
+    margin:0;
+    padding:0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*------ code ---------*/
+
+main{
+    display:flex;
+}
+
+.content{
+    display:flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 18px 70px;
+    justify-content: center;
+    align-items:center;
+}
+
+a{
+    text-decoration:none;
+}
+
+.logo{
+    width:50px;
+    margin:30px 10px;
+}
+
+.title{
+    text-align:center;
+    font-weight: 700;
+    font-size: var(--main-font-size);
+    line-height: 32px;
+}
+
+.text{
+    font-weight: var(--medium-weight);
+    font-size: var(--smaller-font-size);
+    margin-top:10px;
+    line-height: 22px;
+    text-align: center;
+}
+
+/*----- Form ------*/
+
+.form{
+    display:flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    margin:20px 0;
+}
+
+.input-field{
+    width: 100%;
+    margin-bottom:15px;
+    border:2px solid var(--silversand);
+    outline:none;
+    padding:15px 20px;
+    font-size:var(--smaller-font-size);
+    border-radius: 5px;
+}
+
+.input-field::placeholder{
+    color:var(--silversand)
+}
+
+.input-field:focus{
+    border-color: #575757;
+}
+
+.btn{
+    background: var(--black);
+    color:white;
+    text-align: center;
+    width: 100%;
+    padding:15px 32px;
+    border-radius: 5px;
+    font-size: var(--smaller-font-size);
+    border:2px solid var(--black);
+    outline:none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus{
+    background: white;
+    color:var(--black);
+}
+
+/*------ OR & Line -------*/
+
+.or-line{
+    display:flex;    
+    width:100%;
+    align-items:center;
+    justify-content: space-between;
+    margin:20px 0;
+}
+
+.or-line p{
+    font-size: var(--main-font-size);
+    font-weight: var(--regular-weight);
+    text-align:center;
+    color:var(--silversand);
+}
+
+.line{
+    width: 43%;
+    height: 1px;
+    background: var(--silversand);
+}
+
+/*------- Other means to login ----------*/
+
+.login-socials{
+    display:flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.btn-socials{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background: white;
+    color:var(--black);
+    border-color: var(--silversand);
+    margin-top:15px;
+}
+
+.btn-socials:hover,
+.btn-socials:focus{
+    border-color: var(--black);
+}
+
+.btn-socials img{
+    width:25px;
+    margin:0 10px;
+}
+
+.text a{
+    text-decoration: underline;
+    color:var(--black);
+}
+
+.text a:hover,
+.text a:focus{
+    text-decoration: none;
+}
+
+.image{
+    height:100%;
+    width: 100%;
+    display:none;
+}
+
+/*-------- Queries for tablet and desktop -------*/
+@media screen and (min-width:430px){
+
+    .container{
+        flex-basis:50%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content{
+        flex-basis:90%;
+    }
+
+    .image-container{
+        flex-basis: 50%;
+    }
+
+    .image{
+        display:block;
+    }
+}
+
+@media screen and (min-width:905px){
+
+    .content{
+        flex-basis:80%;
+    }
+}
