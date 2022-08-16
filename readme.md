@@ -1,6 +1,6 @@
 ## This is a challenge gotten from Web Developer Mentor Community, it is a login form.
 
-The design is live at [login-page-webdev.netlify.app/](https://login-page-webdev.netlify.app/)
+The design is live at [login-page-webdev](https://login-page-webdev.netlify.app/)
 
 
 Images of the login form in desktop and mobile view is below
